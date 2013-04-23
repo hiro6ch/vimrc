@@ -1,3 +1,5 @@
+" Pathogen 
+execute pathogen#infect()
 " SET
 set nocompatible
 set autoread
@@ -36,7 +38,6 @@ set smarttab
 set lbr
 set tw=500
 
-
 " syntax Color
 syntax on 
 colorscheme solarized
@@ -50,9 +51,6 @@ filetype plugin on
 filetype indent on
 autocmd! BufNewFile,BufRead *.{ino,pde} setlocal ft=arduino
 autocmd! BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} setlocal ft=markdown
-
-" Pathogen 
-execute pathogen#infect()
 
 " For ruby
 compiler ruby         " Enable compiler support for ruby
