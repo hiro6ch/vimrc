@@ -32,8 +32,8 @@ set undolevels=1000 "maximum number of changes that can be undone
 " => Text, tab and indent related
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set expandtab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set smarttab
 set lbr
 set tw=500
@@ -63,7 +63,10 @@ nmap  <F2> :NERDTreeTabsToggle<CR>
 let NERDTreeIgnore=['\.o$', '\~$', '\.a$', '\.bak$', '\.d$']
 let NERDTreeWinPos='left'
 
-"let g:vim_markdown_folding_disabled=1
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
+
+let g:vim_markdown_folding_disabled=1
 
 " method = indent, syntax 
 set foldmethod=indent
