@@ -16,6 +16,7 @@ set wildmode=list:full
 
 set hlsearch
 set wrapscan
+set infercase
 
 set ai
 set ruler
@@ -32,8 +33,10 @@ set undolevels=1000 "maximum number of changes that can be undone
 " => Text, tab and indent related
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set expandtab
-set shiftwidth=2
-set tabstop=2
+set tabstop=4 shiftwidth=4 softtabstop=4
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd Filetype slim setlocal ts=2 sts=2 sw=2
 set smarttab
 set lbr
 set tw=500
@@ -52,8 +55,17 @@ filetype indent on
 autocmd! BufNewFile,BufRead *.{ino,pde} setlocal ft=arduino
 autocmd! BufNewFile,BufRead *.{md,mdown,mkd,mkdn,markdown,mdwn} setlocal ft=markdown
 
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_force_overwrite_completefunc = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_skip_auto_completion_time = '0.3'
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
 " For ruby
-compiler ruby         " Enable compiler support for ruby
+autocmd FileType ruby compiler ruby
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1

@@ -43,3 +43,12 @@
 [submodule "bundle/vim-rubocop"]
 	path = bundle/vim-rubocop
 	url = https://github.com/ngmy/vim-rubocop.git
+[submodule "bundle/neocomplcache"]
+	path = bundle/neocomplcache
+	url = https://github.com/Shougo/neocomplcache.vim.git
+[submodule "bundle/indentLine"]
+	path = bundle/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "bundle/vim.slim"]
+	path = bundle/vim.slim
+	url = https://github.com/slim-template/vim-slim.git

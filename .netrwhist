@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/zhiro/.vim/snippets/_'
+let g:netrw_dirhist_2='/home/zhiro/Documents/blog-ruhoh-v2/themes/twitter'
+let g:netrw_dirhist_3='/home/zhiro/.vim/bundle/ri.vim/plugin'
+let g:netrw_dirhist_4='/etc'
+let g:netrw_dirhist_5='/home/zhiro/tmp/gothonweb/lib/gothonweb'
+let g:netrw_dirhist_6='/home/zhiro/.local/share/cinnamon/extensions/desktop-scroller@ccadeptic23'
+let g:netrw_dirhist_7='/home/zhiro/tmp/cms/pages'
+let g:netrw_dirhist_8='/home/zhiro/tmp/Gumby'
