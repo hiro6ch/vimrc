@@ -49,3 +49,18 @@
 [submodule "bundle/vim.slim"]
 	path = bundle/vim.slim
 	url = https://github.com/slim-template/vim-slim.git
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "bundle/lightline.vim"]
+	path = bundle/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
